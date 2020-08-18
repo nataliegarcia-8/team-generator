@@ -9,15 +9,64 @@ const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require("./lib/htmlRenderer");
+ class Employee {
+     constructor(name, id, email)
+     getName() {
+        
+     }
+     getID() {
+
+     }
+     getEmail() {
+
+     }
+
+     getRole() {
+         return Employee
+     }
+ }
+ class Manager extends Employee {
+     constructor(officeNumber)
+     getRole() {
+         return Manager
+     }
+
+ }
+ 
+ class Engineer extends Employee {
+     constructor(github)
+     getRole() {
+         return Engineer
+        }
+        
+    }
+    class Intern extends Employee {
+                    constructor(school)
+                
+        getSchool(){}
+        getRole() {
+            return Intern
+        }
+                }
+ 
+// const manager = new Manager()
+// const intern = new Intern()
+// const engineer = new Engineer()
 
 
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
 
+addTeamMember() {
+    const newManager = new Manager()
+
+}
 // After the user has input all employees desired, call the `render` function (required
 // above) and pass in an array containing all employee objects; the `render` function will
 // generate and return a block of HTML including templated divs for each employee!
+generateHTML() {
 
+}
 // After you have your html, you're now ready to create an HTML file using the HTML
 // returned from the `render` function. Now write it to a file named `team.html` in the
 // `output` folder. You can use the variable `outputPath` above target this location.
