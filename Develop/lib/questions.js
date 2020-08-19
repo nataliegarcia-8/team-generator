@@ -1,3 +1,4 @@
+// export object questions for each position 
 module.exports = {
     manager: [
         {
