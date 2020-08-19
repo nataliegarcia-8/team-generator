@@ -60,7 +60,7 @@ module.exports = {
             message: "What is the engineer's email?"
         },
         {
-            name: "gitHub",
+            name: "github",
             type: "input",
             message: "What is the engineer's gitHub?"
         },
@@ -68,7 +68,7 @@ module.exports = {
     select: {
         name: "choice",
         type: "list",
-        message: "Add new employee:",
-        choices: ['Intern', 'Engineeer', 'Exit']
+        message: "Do you want to add a new employee",
+        choices: ['Intern', 'Engineer', 'No']
     }
 }

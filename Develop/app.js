@@ -22,7 +22,7 @@ function getChoice() {
                     return buildIntern()
                 case 'Engineer':
                     return buildEngineer()
-                case 'Exit':
+                case 'No':
                     return renderHTML()
                 default:
                     break
@@ -51,7 +51,7 @@ function buildIntern() {
 function buildEngineer() {
     inquirer.prompt(questions.engineer)
         .then(function (answer) {
-            const employee = new Engineer(answer.name, answer.id, answer.email, answer.gitHub)
+            const employee = new Engineer(answer.name, answer.id, answer.email, answer.github)
             employeeList.push(employee)
             getChoice()
         })
