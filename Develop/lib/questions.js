@@ -69,7 +69,7 @@ module.exports = {
     select: {
         name: "choice",
         type: "list",
-        message: "Do you want to add a new employee",
+        message: "Do you want to add a new employee?",
         choices: ['Intern', 'Engineer', 'No']
     }
 }
