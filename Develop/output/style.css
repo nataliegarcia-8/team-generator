@@ -1,0 +1,18 @@
+.team-heading {
+    background-color: #f76c6c;
+}
+
+.card-header {
+    background-color: #24305e;
+    color: white;
+}
+
+.card {
+    margin: 15px;
+    width: 300px;
+}
+
+.employee-card {
+    background-color: #f8e9a1;
+}
+
